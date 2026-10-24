@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/call_background"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/caller_initial"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:background="@drawable/bg_circle_avatar"
+        android:gravity="center"
+        android:textColor="@color/call_on_background"
+        android:textSize="44sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/caller_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/call_on_background"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/caller_initial" />
+
+    <TextView
+        android:id="@+id/call_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/call_incoming_label"
+        android:textColor="@color/call_muted"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/caller_name" />
+
+    <ImageButton
+        android:id="@+id/btn_decline"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/bg_circle_decline"
+        android:contentDescription="@string/call_decline"
+        android:src="@drawable/ic_call_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_answer"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_answer"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:background="@drawable/bg_circle_answer"
+        android:contentDescription="@string/call_answer"
+        android:src="@drawable/ic_call"
+        app:layout_constraintBottom_toBottomOf="@id/btn_decline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_decline" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/call_decline"
+        android:textColor="@color/call_muted"
+        app:layout_constraintEnd_toEndOf="@id/btn_decline"
+        app:layout_constraintStart_toStartOf="@id/btn_decline"
+        app:layout_constraintTop_toBottomOf="@id/btn_decline" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/call_answer"
+        android:textColor="@color/call_muted"
+        app:layout_constraintEnd_toEndOf="@id/btn_answer"
+        app:layout_constraintStart_toStartOf="@id/btn_answer"
+        app:layout_constraintTop_toBottomOf="@id/btn_answer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

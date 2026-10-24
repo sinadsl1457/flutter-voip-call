@@ -1,0 +1,7 @@
+{
+  "API_BASE_URL": "https://api.example.com/app",
+  "AGORA_APP_ID": "",
+  "IS_TEST_CALL": true,
+  "DEMO_ACCESS_TOKEN": "",
+  "DEMO_USER_ID": "1"
+}

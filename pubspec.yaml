@@ -1,0 +1,53 @@
+name: voip_call
+description: "1:1 VoIP calling core for Flutter — Agora RTC + CallKit/PushKit (iOS) + custom call stack (Android)."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # state / di
+  flutter_bloc: ^9.1.1
+  get_it: ^8.2.0
+  injectable: ^2.4.1
+
+  # network
+  dio: ^5.9.0
+  retrofit: ^4.7.2
+  json_annotation: ^4.9.0
+
+  # model
+  freezed_annotation: ^3.1.0
+  dartz: ^0.10.1
+  equatable: ^2.0.5
+
+  # call
+  agora_rtc_engine: ^6.5.3
+  permission_handler: ^12.0.1
+  firebase_core: ^4.1.0
+  firebase_messaging: ^16.1.0
+
+  logger: ^2.2.0
+  uuid: ^4.5.1
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  build_runner: ^2.4.15
+  freezed: ^3.2.3
+  json_serializable: ^6.9.5
+  retrofit_generator: ^10.2.0
+  injectable_generator: ^2.4.1
+
+  bloc_test: ^10.0.0
+  mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true
