@@ -68,7 +68,7 @@ class _FakeMedia implements CallMedia {
   Future<void> leave() async => left = true;
 }
 
-Matcher _phase(
+TypeMatcher<CallState> _phase(
   CallPhase phase, {
   CallEndReason? reason,
   CallError? error,

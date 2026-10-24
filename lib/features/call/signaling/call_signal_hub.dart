@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:collection';
 
 import 'package:injectable/injectable.dart';
 
@@ -133,7 +132,7 @@ class _RecentKeys {
   _RecentKeys(this.capacity);
 
   final int capacity;
-  final _keys = LinkedHashSet<String>();
+  final _keys = <String>{};
 
   bool contains(String key) => _keys.contains(key);
 

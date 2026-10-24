@@ -239,7 +239,7 @@ flutterfire configure                     # 또는 콘솔에서 직접 내려받
 
 # 3) 코드 생성 (freezed / json_serializable / retrofit / injectable)
 flutter pub get
-dart run build_runner build -d
+dart run build_runner build
 
 # 4) 실행
 flutter run --dart-define-from-file=env/dev.json
